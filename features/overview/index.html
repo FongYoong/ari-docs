@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#values" class="md-skip">
+        <a href="#make-ari-come-alive" class="md-skip">
           Skip to content
         </a>
       
@@ -423,6 +423,33 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#make-ari-come-alive" class="md-nav__link">
+    Make Ari come alive
+  </a>
+  
+    <nav class="md-nav" aria-label="Make Ari come alive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interpreter-mode" class="md-nav__link">
+    Interpreter mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-a-program" class="md-nav__link">
+    Run a program
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#values" class="md-nav__link">
     Values
   </a>
@@ -444,15 +471,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#variable-names" class="md-nav__link">
-    Variable names
+  <a href="#comments" class="md-nav__link">
+    Comments
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#comments" class="md-nav__link">
-    Comments
+  <a href="#variable-names" class="md-nav__link">
+    Variable names
   </a>
   
 </li>
@@ -685,6 +712,33 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#make-ari-come-alive" class="md-nav__link">
+    Make Ari come alive
+  </a>
+  
+    <nav class="md-nav" aria-label="Make Ari come alive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interpreter-mode" class="md-nav__link">
+    Interpreter mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-a-program" class="md-nav__link">
+    Run a program
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#values" class="md-nav__link">
     Values
   </a>
@@ -706,15 +760,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#variable-names" class="md-nav__link">
-    Variable names
+  <a href="#comments" class="md-nav__link">
+    Comments
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#comments" class="md-nav__link">
-    Comments
+  <a href="#variable-names" class="md-nav__link">
+    Variable names
   </a>
   
 </li>
@@ -794,9 +848,67 @@
                 
                   <h1>Overview</h1>
                 
-                <h2 id="values">Values<a class="headerlink" href="#values" title="Permanent link">&para;</a></h2>
+                <h2 id="make-ari-come-alive">Make Ari come alive<a class="headerlink" href="#make-ari-come-alive" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Ari
+<li>
+<p>Once Ari is <a href="../../setup/download">downloaded</a>, either:</p>
+<ul>
+<li>
+<p>double-click the file</p>
+<p><strong>or</strong></p>
+</li>
+<li>
+<p>open a command line in the same folder and enter <code>ari-windows</code> or <code>./ari-linux</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Ari's interface should look like this
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>‾‾‾‾‾‾‾‾‾
+Ari 0.1.0
+_________
+
+&gt; 
+</code></pre></div>
+</td></tr></table></p>
+</li>
+</ul>
+<h3 id="interpreter-mode">Interpreter mode<a class="headerlink" href="#interpreter-mode" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The above interface is called the interpreter mode or more commonly known as <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">REPL</a>.</li>
+<li>
+<p>Experiment with Ari by typing in Ari-compatible syntax:</p>
+<p><img alt="Placeholder" loading="lazy" src="../img/overview/interpreter.png" /></p>
+</li>
+</ul>
+<h3 id="run-a-program">Run a program<a class="headerlink" href="#run-a-program" title="Permanent link">&para;</a></h3>
+<ul>
+<li>For most practical purposes, it is better to write an Ari program in a separate file.</li>
+<li>For example, if the file's name is called <code>even_numbers.ari</code>, open the command line and enter <code>ari-windows even_numbers.ari</code> or <code>./ari-linux even_numbers.ari</code></li>
+</ul>
+<div class="admonition example">
+<ul>
+<li>
+<p>Below is a sample code for <code>even_numbers.ari</code> and the result:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>for(let i = 0; i &lt; 10; i = i + 2) {
+    print i + &quot;, &quot;;
+}
+</code></pre></div>
+</td></tr></table>
+</li>
+</ul>
+<p><img alt="Placeholder" loading="lazy" src="../img/overview/run_file.png" /></p>
+</div>
+<hr />
+<h2 id="values">Values<a class="headerlink" href="#values" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Values are Ari's bread and butter:
     <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -808,11 +920,56 @@ true;            // Boolean
 [&quot;abc&quot;, &quot;def&quot;]; // Array of Strings
 </code></pre></div>
 </td></tr></table></li>
+<li>Check out the other sections for more info.</li>
 </ul>
 <h2 id="semicolon">Semicolon<a class="headerlink" href="#semicolon" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Never forget to add semicolons behind each statement. I know it is annoying, but consider it a mental discipline, like house chores.
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>1 + 2;
+<span class="hll">50 + 70  // Missing semicolon!
+</span>19 + 21;
+</code></pre></div>
+</td></tr></table></li>
+</ul>
 <h2 id="whitespace">Whitespace<a class="headerlink" href="#whitespace" title="Permanent link">&para;</a></h2>
-<h2 id="variable-names">Variable names<a class="headerlink" href="#variable-names" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Ari doesn't care about whitespace. How much spacing to use is up to you:
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>   3; 2;    2; 3;
+   4;   1;1;   4;
+    5;        5;
+      6;    6;
+        7;7;
+
+&quot;I love whitespace&quot;;
+</code></pre></div>
+</td></tr></table></li>
+</ul>
 <h2 id="comments">Comments<a class="headerlink" href="#comments" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Everyone loves to gossip, so comment to your heart's content by adding double slashes, <code>//</code>:
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>&quot;Shoplifters will be prostituted&quot;;
+// Note to self: Change this misspelling in one year&#39;s time when I review this code again.
+// Just kidding.
+</code></pre></div>
+</td></tr></table></li>
+</ul>
+<h2 id="variable-names">Variable names<a class="headerlink" href="#variable-names" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../variable">Variable</a> <strong>names</strong> can only contain <strong>numbers</strong>, <strong>alphabets</strong>, and the <strong>underscore</strong> <code>_</code>. Also, names <strong>cannot begin</strong> with a number; 
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>
+</code></pre></div>
+</td></tr></table></li>
+</ul>
 <h2 id="displaying-output">Displaying output<a class="headerlink" href="#displaying-output" title="Permanent link">&para;</a></h2>
 <h2 id="loops">Loops<a class="headerlink" href="#loops" title="Permanent link">&para;</a></h2>
 <h2 id="exiting-the-program">Exiting the program<a class="headerlink" href="#exiting-the-program" title="Permanent link">&para;</a></h2>
