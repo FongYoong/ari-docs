@@ -1,9 +1,10 @@
 
+
 ***
 ## Estimating Pi, **π**, with Monte Carlo
 
 * Check out page 3 of [this document (PDF)](https://arxiv.org/ftp/arxiv/papers/1909/1909.13212.pdf) for more info.
-* Increase the number of iterations or samples to get a more accurate answer.
+* Increase the number of iterations or samples to obtain a more precise value.
 
 !!! example ""
 
@@ -58,8 +59,7 @@
 ***
 ## Fibonacci (Slow)
 
-* This implementation of the [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) is **slow** because it uses a **recursive** function,
-which results in many stack frames as [explained here](https://stackoverflow.com/a/2651200).
+* This implementation of the [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) is **slow** because it uses a **recursive** function, which results in many stack frames as [explained here](https://stackoverflow.com/a/2651200).
 
 !!! example ""
 
@@ -105,4 +105,3 @@ which results in many stack frames as [explained here](https://stackoverflow.com
             a = b;
         }
         ```
-

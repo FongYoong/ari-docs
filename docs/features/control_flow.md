@@ -76,7 +76,7 @@
     ```
 
 !!! failure "Warning"
-    * Both ```if``` and ```else``` usually require the curly brackets.
+    * Both ```if``` and ```else``` require the curly brackets and an error occurs if otherwise.
     * Permitted in some popular languages, the syntax below is **supported** in Ari:
     ```
         if (a + b < 15)

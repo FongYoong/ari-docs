@@ -1,9 +1,7 @@
 
-
 ## Values
 
-* Ari :
-
+* Ari
     ```
     1;               // Number
     "Good mourning"; // String
@@ -11,7 +9,6 @@
     [1, 2, 3];       // Array of Numbers
     ["abc", "def"]; // Array of Strings
     ```
-
 
 
 ## Semicolon
@@ -22,9 +19,6 @@
 
 ## Whitespace
 
-
-
-## Displaying output
 
 
 
