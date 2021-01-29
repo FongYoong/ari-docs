@@ -1,7 +1,9 @@
 
-## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Ari, a simple interpreter messily written in Rust.
+
+***
+
+* ⏬ [Download](../setup/download)
+* 🎮 [Try it now](../setup/try)
+* 📖 [Language features](../features/overview)

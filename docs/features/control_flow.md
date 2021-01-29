@@ -76,15 +76,15 @@
     ```
 
 !!! failure "Warning"
-    * Both ```if``` and ```else``` require the curly brackets and an error occurs if otherwise.
-    * Although permitted in some popular languages, the syntax below is **not supported** to avoid confusion:
+    * Both ```if``` and ```else``` usually require the curly brackets.
+    * Permitted in some popular languages, the syntax below is **supported** in Ari:
     ```
         if (a + b < 15)
             println "Less than 15";
         else
             println "Not less than 15"; // This gets printed
     ```
-    * The above syntax is unsupported because it can cause unexpected behaviour if used incorrectly.
+    * The above syntax is **not recommended** because it can cause unexpected behaviour if used incorrectly.
     Apple's IOS had a security bug in 2014 that resulted because of this syntax being permitted in C++.
     More info [here](https://www.imperialviolet.org/2014/02/22/applebug.html).
 

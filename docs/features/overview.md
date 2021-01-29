@@ -1,11 +1,16 @@
-```  hl_lines="2 3"
-fn main() {
-    print("Hello, 🦀");
-}
-```
+
 
 ## Values
 
+* Ari :
+
+    ```
+    1;               // Number
+    "Good mourning"; // String
+    true;            // Boolean
+    [1, 2, 3];       // Array of Numbers
+    ["abc", "def"]; // Array of Strings
+    ```
 
 
 
@@ -17,6 +22,9 @@ fn main() {
 
 ## Whitespace
 
+
+
+## Displaying output
 
 
 

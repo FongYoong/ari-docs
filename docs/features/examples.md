@@ -1,9 +1,9 @@
 
-
 ***
 ## Estimating Pi, **π**, with Monte Carlo
 
 * Check out page 3 of [this document (PDF)](https://arxiv.org/ftp/arxiv/papers/1909/1909.13212.pdf) for more info.
+* Increase the number of iterations or samples to get a more accurate answer.
 
 !!! example ""
 
@@ -41,7 +41,7 @@
 ## Using FFT for polynomial multiplication
 
 * The [Fast Fourier Transform (FFT)](https://en.wikipedia.org/wiki/Fast_Fourier_transform) can be used to compute the resulting polynomial coefficients of a polynomial multiplication.
-* Refer to [this StackExchange answer](https://math.stackexchange.com/a/764870).
+* For more info, refer to [this StackExchange answer](https://math.stackexchange.com/a/764870).
 
 !!! example ""
 
@@ -54,3 +54,55 @@
         ```
         
         ```
+
+***
+## Fibonacci (Slow)
+
+* This implementation of the [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) is **slow** because it uses a **recursive** function,
+which results in many stack frames as [explained here](https://stackoverflow.com/a/2651200).
+
+!!! example ""
+
+    === "REPL.IT"
+
+        <iframe height="400em" width="100%" src="https://repl.it/@FongChien/Example-Fibonacci-Slow?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+    === "Code only"
+
+        ```
+        fn fibonacci_slow(n) {
+            if (n <= 1) {
+                return n;
+            }
+            return fib(n - 2) + fib(n - 1);
+        }
+
+        for (let i = 0; i < 20; i = i + 1) {
+            println fibonacci_slow(i);
+        }
+        ```
+
+***
+## Fibonacci (Fast)
+
+* This implementation of the [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) is much **faster** than the [previous example](../examples#fibonacci-slow).
+
+!!! example ""
+
+    === "REPL.IT"
+
+        <iframe height="400em" width="100%" src="https://repl.it/@FongChien/Example-Fibonacci-Fast?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+    === "Code only"
+
+        ```
+        let a = 0;
+        let temp = 0;
+
+        for (let b = 1; a < 10000; b = temp + b) {
+            println a;
+            temp = a;
+            a = b;
+        }
+        ```
+
