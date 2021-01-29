@@ -1,4 +1,55 @@
 
+***
+## Essential
+
+### print
+
+???+ abstract ""
+    **random_choose(source: [Array](../array), number_of_elements: [Number](../number))** ➟ **[Array](../array)**
+
+    !!! info ""
+        * A [uniform distribution](https://en.wikipedia.org/wiki/Discrete_uniform_distribution) is used to randomly select an element from the [source](../array).
+        * The number of elements determine the length of the generated array and must be zero or positive.
+
+    !!! tip "Example"
+        * This example simulates 1000 throws of a fair dice:
+            ```
+            println ;
+            ```
+
+***
+### print
+
+???+ abstract ""
+    **random_choose(source: [Array](../array), number_of_elements: [Number](../number))** ➟ **[Array](../array)**
+
+    !!! info ""
+        * A [uniform distribution](https://en.wikipedia.org/wiki/Discrete_uniform_distribution) is used to randomly select an element from the [source](../array).
+        * The number of elements determine the length of the generated array and must be zero or positive.
+
+    !!! tip "Example"
+        * This example simulates 1000 throws of a fair dice:
+            ```
+            println random_choose([1, 2, 3, 4, 5, 6], 1000); // 1000 random values
+                                                             // [2, 3, 4, 5, 2,  ...]
+            ```
+
+***
+### bai
+
+???+ abstract ""
+    **random_choose(source: [Array](../array), number_of_elements: [Number](../number))** ➟ **[Array](../array)**
+
+    !!! info ""
+        * A [uniform distribution](https://en.wikipedia.org/wiki/Discrete_uniform_distribution) is used to randomly select an element from the [source](../array).
+        * The number of elements determine the length of the generated array and must be zero or positive.
+
+    !!! tip "Example"
+        * This example simulates 1000 throws of a fair dice:
+            ```
+            println random_choose([1, 2, 3, 4, 5, 6], 1000); // 1000 random values
+                                                             // [2, 3, 4, 5, 2,  ...]
+            ```
 
 ***
 ## ** Random generation **
