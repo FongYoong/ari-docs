@@ -838,8 +838,8 @@ if (a + b &lt; 15) { // false
 <div class="admonition failure">
 <p class="admonition-title">Warning</p>
 <ul>
-<li>Both <code>if</code> and <code>else</code> require the curly brackets and an error occurs if otherwise.</li>
-<li>Although permitted in some popular languages, the syntax below is <strong>not supported</strong> to avoid confusion:
+<li>Both <code>if</code> and <code>else</code> usually require the curly brackets.</li>
+<li>Permitted in some popular languages, the syntax below is <strong>supported</strong> in Ari:
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -849,7 +849,7 @@ if (a + b &lt; 15) { // false
         println &quot;Not less than 15&quot;; // This gets printed
 </code></pre></div>
 </td></tr></table></li>
-<li>The above syntax is unsupported because it can cause unexpected behaviour if used incorrectly.
+<li>The above syntax is <strong>not recommended</strong> because it can cause unexpected behaviour if used incorrectly.
 Apple's IOS had a security bug in 2014 that resulted because of this syntax being permitted in C++.
 More info <a href="https://www.imperialviolet.org/2014/02/22/applebug.html">here</a>.</li>
 </ul>

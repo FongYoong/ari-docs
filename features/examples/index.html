@@ -556,6 +556,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#fibonacci-slow" class="md-nav__link">
+    Fibonacci (Slow)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fibonacci-fast" class="md-nav__link">
+    Fibonacci (Fast)
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -621,6 +635,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#fibonacci-slow" class="md-nav__link">
+    Fibonacci (Slow)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fibonacci-fast" class="md-nav__link">
+    Fibonacci (Fast)
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -644,6 +672,7 @@
 <h2 id="estimating-pi-with-monte-carlo">Estimating Pi, <strong>π</strong>, with Monte Carlo<a class="headerlink" href="#estimating-pi-with-monte-carlo" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Check out page 3 of <a href="https://arxiv.org/ftp/arxiv/papers/1909/1909.13212.pdf">this document (PDF)</a> for more info.</li>
+<li>Increase the number of iterations or samples to get a more accurate answer.</li>
 </ul>
 <div class="admonition example">
 <div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">REPL.IT</label><div class="tabbed-content">
@@ -702,7 +731,7 @@ for(let i = 0; i &lt; number_of_iterations; i = i + 1) {
 <h2 id="using-fft-for-polynomial-multiplication">Using FFT for polynomial multiplication<a class="headerlink" href="#using-fft-for-polynomial-multiplication" title="Permanent link">&para;</a></h2>
 <ul>
 <li>The <a href="https://en.wikipedia.org/wiki/Fast_Fourier_transform">Fast Fourier Transform (FFT)</a> can be used to compute the resulting polynomial coefficients of a polynomial multiplication.</li>
-<li>Refer to <a href="https://math.stackexchange.com/a/764870">this StackExchange answer</a>.</li>
+<li>For more info, refer to <a href="https://math.stackexchange.com/a/764870">this StackExchange answer</a>.</li>
 </ul>
 <div class="admonition example">
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">REPL.IT</label><div class="tabbed-content">
@@ -710,6 +739,71 @@ for(let i = 0; i &lt; number_of_iterations; i = i + 1) {
 </div>
 <input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Code only</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+</div>
+<hr />
+<h2 id="fibonacci-slow">Fibonacci (Slow)<a class="headerlink" href="#fibonacci-slow" title="Permanent link">&para;</a></h2>
+<ul>
+<li>This implementation of the <a href="https://en.wikipedia.org/wiki/Fibonacci_number">Fibonacci sequence</a> is <strong>slow</strong> because it uses a <strong>recursive</strong> function,
+which results in many stack frames as <a href="https://stackoverflow.com/a/2651200">explained here</a>.</li>
+</ul>
+<div class="admonition example">
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">REPL.IT</label><div class="tabbed-content">
+<p><iframe height="400em" width="100%" src="https://repl.it/@FongChien/Example-Fibonacci-Slow?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Code only</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>fn fibonacci_slow(n) {
+    if (n &lt;= 1) {
+        return n;
+    }
+    return fib(n - 2) + fib(n - 1);
+}
+
+for (let i = 0; i &lt; 20; i = i + 1) {
+    println fibonacci_slow(i);
+}
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+</div>
+<hr />
+<h2 id="fibonacci-fast">Fibonacci (Fast)<a class="headerlink" href="#fibonacci-fast" title="Permanent link">&para;</a></h2>
+<ul>
+<li>This implementation of the <a href="https://en.wikipedia.org/wiki/Fibonacci_number">Fibonacci sequence</a> is much <strong>faster</strong> than the <a href="../examples#fibonacci-slow">previous example</a>.</li>
+</ul>
+<div class="admonition example">
+<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">REPL.IT</label><div class="tabbed-content">
+<p><iframe height="400em" width="100%" src="https://repl.it/@FongChien/Example-Fibonacci-Fast?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Code only</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>let a = 0;
+let temp = 0;
+
+for (let b = 1; a &lt; 10000; b = temp + b) {
+    println a;
+    temp = a;
+    a = b;
+}
 </code></pre></div>
 </td></tr></table>
 </div>
