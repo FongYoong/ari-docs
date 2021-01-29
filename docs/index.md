@@ -1,6 +1,7 @@
 
-## Ari, a simple interpreter messily written in Rust.
+***
+## **Ari**, a simple interpreter messily written in [**Rust**](https://www.rust-lang.org/).
 
-* ⏬ [Download](https://fongyoong.github.io/setup/download)
-* 🎮 [Try it out now](https://fongyoong.github.io/setup/try)
-* 📖 [Language features](https://fongyoong.github.io/features/overview)
+* ⏬ [Download](../setup/download)
+* 🎮 [Try it out now](../setup/try)
+* 📖 [Language features](../features/overview)

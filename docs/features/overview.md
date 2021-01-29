@@ -1,6 +1,6 @@
 
 
-## Make Ari come alive
+## **Make Ari come alive**
 
 * Once Ari is [downloaded](../../setup/download), either:
     * double-click the file
@@ -90,7 +90,7 @@
 
 * [Variable](../variable) **names** can only contain **numbers**, **alphabets**, and the **underscore** `_`. Also, names **cannot begin** with a number; 
     ```
-    
+
     ```
 
 ## Displaying output
