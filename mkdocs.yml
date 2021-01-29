@@ -1,0 +1,71 @@
+site_name: Ari 0.1.0 Docs
+repo_url: https://github.com/FongYoong/ari-docs
+site_description: Documentation for the Ari language
+site_author: Fong Chien Yoong
+nav:
+    - Ari's GitHub: https://github.com/FongYoong/ari-lang
+    - Home: index.md
+    - Setup:
+        - Download: setup/download.md
+        - Try it out: setup/try.md
+    - Language Features:
+        - Overview: features/overview.md
+        - Number: features/number.md
+        - String: features/string.md
+        - Boolean: features/boolean.md
+        - Null: features/null.md
+        - Variable: features/variable.md
+        - Control Flow: features/control_flow.md
+        - Function: features/function.md
+        - Array: features/array.md
+        - Built-in Functions: features/builtin_functions.md
+        - Examples: features/examples.md
+    - Checklist: checklist.md
+
+
+theme:
+    name: material
+    palette:
+      primary: pink
+    favicon: book-16.svg
+    icon:
+        logo: octicons/book-16
+    features:
+      - navigation.tabs
+      - navigation.sections
+      - navigation.expand
+      
+      
+    highlightjs: true
+    hljs_languages:
+        - bash
+        - rust
+    prev_next_buttons_location: bottom
+    titles_only: false
+
+plugins:
+  - search
+
+markdown_extensions:
+  -  toc:
+      permalink: true
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - pymdownx.tasklist:
+        custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js
+  - javascripts/config.js
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css
