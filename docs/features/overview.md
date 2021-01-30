@@ -237,6 +237,6 @@
 ***
 ## **More Examples**
 
-* Go [here](../examples)
+* Go [here](../../examples)
 
 ***

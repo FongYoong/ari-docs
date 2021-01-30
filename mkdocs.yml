@@ -19,7 +19,7 @@ nav:
         - Function: features/function.md
         - Array: features/array.md
         - Built-in Functions: features/builtin_functions.md
-        - Examples: features/examples.md
+    - Examples: examples.md
     - Checklist: checklist.md
 
 

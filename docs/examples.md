@@ -44,17 +44,12 @@
 * The [Fast Fourier Transform (FFT)](https://en.wikipedia.org/wiki/Fast_Fourier_transform) can be used to compute the resulting polynomial coefficients of a polynomial multiplication.
 * For more info, refer to [this StackExchange answer](https://math.stackexchange.com/a/764870).
 
-!!! example ""
+!!! failure "Laziness strikes again"
+    * Oops, seems like I forgot to add [sine and cosine](https://en.wikipedia.org/wiki/Trigonometric_functions) among the built-in functions,
+    so [**I Can't Go For That**](https://youtu.be/ccenFp_3kq8?t=91) until I am [productive again](https://i.chzbgr.com/full/7777220352/h3C757D3C/now-thats-a-hell-of-a-cat).
 
-    === "REPL.IT"
+    ![Placeholder](https://img-9gag-fun.9cache.com/photo/aEP1Lep_700bwp.webp){: loading=lazy }
 
-        <iframe height="400em" width="100%" src="https://repl.it/@FongChien/Example-FFT?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-    === "Code only"
-
-        ```
-        
-        ```
 
 ***
 ## Fibonacci (Slow)
