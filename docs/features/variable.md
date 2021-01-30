@@ -3,7 +3,10 @@
 
 * The block of memory is dynamically allocated and deallocated automatically using both the stack and heap.
 
-* [Variable](../variable) **names** can only contain **numbers**, **alphabets**, and the **underscore** `_`. Also, names **cannot begin** with a number; 
+* [Variable](../variable) **names** can only contain **numbers**, **alphabets**, and the **underscore** `_`. Also, names **cannot begin** with a number.
+
+!!! warning "Reserved keywords"
+    * `class`, `super`, and `this` are reserved for a future version of Ari which includes classes, so they are **forbidden**.
 
 ***
 ## **Declaration**
