@@ -546,8 +546,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#print_1" class="md-nav__link">
-    print
+  <a href="#println" class="md-nav__link">
+    println
   </a>
   
 </li>
@@ -731,8 +731,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#print_1" class="md-nav__link">
-    print
+  <a href="#println" class="md-nav__link">
+    println
   </a>
   
 </li>
@@ -857,65 +857,74 @@
                   <h1>Built-in Functions</h1>
                 
                 <hr />
-<h2 id="essential">Essential<a class="headerlink" href="#essential" title="Permanent link">&para;</a></h2>
+<h2 id="essential"><strong>Essential</strong><a class="headerlink" href="#essential" title="Permanent link">&para;</a></h2>
 <h3 id="print">print<a class="headerlink" href="#print" title="Permanent link">&para;</a></h3>
-<details class="abstract" open="open"><summary></summary><p><strong>random_choose(source: <a href="../array">Array</a>, number_of_elements: <a href="../number">Number</a>)</strong> ➟ <strong><a href="../array">Array</a></strong></p>
+<details class="abstract" open="open"><summary></summary><p><strong>print AnyType;</strong></p>
 <div class="admonition info">
 <ul>
-<li>A <a href="https://en.wikipedia.org/wiki/Discrete_uniform_distribution">uniform distribution</a> is used to randomly select an element from the <a href="../array">source</a>.</li>
-<li>The number of elements determine the length of the generated array and must be zero or positive.</li>
+<li>Prints any valid value <strong>without newline</strong>.</li>
+<li><strong>No curved brackets</strong>.</li>
 </ul>
 </div>
 <div class="admonition tip">
-<p class="admonition-title">Example</p>
-<ul>
-<li>This example simulates 1000 throws of a fair dice:
-    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>println ;
+<p class="admonition-title">Example<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>let a = &quot;Hello&quot;
+let b = &quot; There&quot;
+print a;
+print b;
+// Output: Hello There
 </code></pre></div>
-</td></tr></table></li>
-</ul>
+</td></tr></table>
+</p>
 </div>
 </details>
 <hr />
-<h3 id="print_1">print<a class="headerlink" href="#print_1" title="Permanent link">&para;</a></h3>
-<details class="abstract" open="open"><summary></summary><p><strong>random_choose(source: <a href="../array">Array</a>, number_of_elements: <a href="../number">Number</a>)</strong> ➟ <strong><a href="../array">Array</a></strong></p>
+<h3 id="println">println<a class="headerlink" href="#println" title="Permanent link">&para;</a></h3>
+<details class="abstract" open="open"><summary></summary><p><strong>println AnyType;</strong></p>
 <div class="admonition info">
 <ul>
-<li>A <a href="https://en.wikipedia.org/wiki/Discrete_uniform_distribution">uniform distribution</a> is used to randomly select an element from the <a href="../array">source</a>.</li>
-<li>The number of elements determine the length of the generated array and must be zero or positive.</li>
+<li>Prints any valid value <strong>with newline</strong>.</li>
+<li><strong>No curved brackets</strong>.</li>
 </ul>
 </div>
 <div class="admonition tip">
-<p class="admonition-title">Example</p>
-<ul>
-<li>This example simulates 1000 throws of a fair dice:
-    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>println random_choose([1, 2, 3, 4, 5, 6], 1000); // 1000 random values
-                                                 // [2, 3, 4, 5, 2,  ...]
+<p class="admonition-title">Example<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>let a = &quot;Hello&quot;
+let b = &quot; There&quot;
+println a;
+println b;
+// Output: Hello
+//          There
 </code></pre></div>
-</td></tr></table></li>
-</ul>
+</td></tr></table>
+</p>
 </div>
 </details>
 <hr />
 <h3 id="bai">bai<a class="headerlink" href="#bai" title="Permanent link">&para;</a></h3>
-<details class="abstract" open="open"><summary></summary><p><strong>random_choose(source: <a href="../array">Array</a>, number_of_elements: <a href="../number">Number</a>)</strong> ➟ <strong><a href="../array">Array</a></strong></p>
+<details class="abstract" open="open"><summary></summary><p><strong>bai AnyType;</strong></p>
 <div class="admonition info">
 <ul>
-<li>A <a href="https://en.wikipedia.org/wiki/Discrete_uniform_distribution">uniform distribution</a> is used to randomly select an element from the <a href="../array">source</a>.</li>
-<li>The number of elements determine the length of the generated array and must be zero or positive.</li>
+<li>Exits Ari prematurely and prints out the given value.</li>
+<li><strong>No curved brackets</strong>.</li>
 </ul>
 </div>
 <div class="admonition tip">
-<p class="admonition-title">Example</p>
-<ul>
-<li>This example simulates 1000 throws of a fair dice:
-    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>println random_choose([1, 2, 3, 4, 5, 6], 1000); // 1000 random values
-                                                 // [2, 3, 4, 5, 2,  ...]
+<p class="admonition-title">Example<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>let something = 1 / 999;
+bai &quot;The program has ended. Nothing to see here.&quot;; // Exit program
+println &quot;Nothing is impossible&quot;; // This will never print
 </code></pre></div>
-</td></tr></table></li>
-</ul>
+</td></tr></table>
+</p>
 </div>
 </details>
 <hr />

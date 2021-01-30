@@ -478,8 +478,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#variable-names" class="md-nav__link">
-    Variable names
+  <a href="#variables" class="md-nav__link">
+    Variables
   </a>
   
 </li>
@@ -492,6 +492,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#if-else" class="md-nav__link">
+    If-Else
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#loops" class="md-nav__link">
     Loops
   </a>
@@ -499,8 +506,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exiting-the-program" class="md-nav__link">
-    Exiting the program
+  <a href="#exiting-the-program-prematurely" class="md-nav__link">
+    Exiting the program prematurely
   </a>
   
 </li>
@@ -513,29 +520,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#generate-random-numbers" class="md-nav__link">
-    Generate random numbers
+  <a href="#functions" class="md-nav__link">
+    Functions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#reading-and-writing-to-files" class="md-nav__link">
-    Reading and writing to files
+  <a href="#built-in-functions" class="md-nav__link">
+    Built-in Functions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#serve-static-files-in-a-web-server" class="md-nav__link">
-    Serve static files in a web server
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getpost-requests" class="md-nav__link">
-    GET/POST Requests
+  <a href="#more-examples" class="md-nav__link">
+    More Examples
   </a>
   
 </li>
@@ -767,8 +767,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#variable-names" class="md-nav__link">
-    Variable names
+  <a href="#variables" class="md-nav__link">
+    Variables
   </a>
   
 </li>
@@ -781,6 +781,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#if-else" class="md-nav__link">
+    If-Else
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#loops" class="md-nav__link">
     Loops
   </a>
@@ -788,8 +795,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exiting-the-program" class="md-nav__link">
-    Exiting the program
+  <a href="#exiting-the-program-prematurely" class="md-nav__link">
+    Exiting the program prematurely
   </a>
   
 </li>
@@ -802,29 +809,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#generate-random-numbers" class="md-nav__link">
-    Generate random numbers
+  <a href="#functions" class="md-nav__link">
+    Functions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#reading-and-writing-to-files" class="md-nav__link">
-    Reading and writing to files
+  <a href="#built-in-functions" class="md-nav__link">
+    Built-in Functions
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#serve-static-files-in-a-web-server" class="md-nav__link">
-    Serve static files in a web server
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getpost-requests" class="md-nav__link">
-    GET/POST Requests
+  <a href="#more-examples" class="md-nav__link">
+    More Examples
   </a>
   
 </li>
@@ -877,7 +877,7 @@ _________
 </td></tr></table></p>
 </li>
 </ul>
-<h3 id="interpreter-mode">Interpreter mode<a class="headerlink" href="#interpreter-mode" title="Permanent link">&para;</a></h3>
+<h3 id="interpreter-mode"><strong>Interpreter mode</strong><a class="headerlink" href="#interpreter-mode" title="Permanent link">&para;</a></h3>
 <ul>
 <li>The above interface is called the interpreter mode or more commonly known as <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">REPL</a>.</li>
 <li>
@@ -885,7 +885,7 @@ _________
 <p><img alt="Placeholder" loading="lazy" src="../img/overview/interpreter.png" /></p>
 </li>
 </ul>
-<h3 id="run-a-program">Run a program<a class="headerlink" href="#run-a-program" title="Permanent link">&para;</a></h3>
+<h3 id="run-a-program"><strong>Run a program</strong><a class="headerlink" href="#run-a-program" title="Permanent link">&para;</a></h3>
 <ul>
 <li>For most practical purposes, it is better to write an Ari program in a separate file.</li>
 <li>For example, if the file's name is called <code>even_numbers.ari</code>, open the command line and enter <code>ari-windows even_numbers.ari</code> or <code>./ari-linux even_numbers.ari</code></li>
@@ -906,23 +906,27 @@ _________
 <p><img alt="Placeholder" loading="lazy" src="../img/overview/run_file.png" /></p>
 </div>
 <hr />
-<h2 id="values">Values<a class="headerlink" href="#values" title="Permanent link">&para;</a></h2>
+<h2 id="values"><strong>Values</strong><a class="headerlink" href="#values" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Values are Ari's bread and butter:
     <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
-5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>1;               // Number
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>1;               // Number
 &quot;Good mourning&quot;; // String
 true;            // Boolean
+null;            // Null
 [1, 2, 3];       // Array of Numbers
 [&quot;abc&quot;, &quot;def&quot;]; // Array of Strings
 </code></pre></div>
 </td></tr></table></li>
+<li><a href="../number#logical-comparisons">Logical comparisons</a> are also essential.</li>
 <li>Check out the other sections for more info.</li>
 </ul>
-<h2 id="semicolon">Semicolon<a class="headerlink" href="#semicolon" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="semicolon"><strong>Semicolon</strong><a class="headerlink" href="#semicolon" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Never forget to add semicolons behind each statement. I know it is annoying, but consider it a mental discipline, like house chores.
     <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -933,7 +937,8 @@ true;            // Boolean
 </code></pre></div>
 </td></tr></table></li>
 </ul>
-<h2 id="whitespace">Whitespace<a class="headerlink" href="#whitespace" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="whitespace"><strong>Whitespace</strong><a class="headerlink" href="#whitespace" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Ari doesn't care about whitespace. How much spacing to use is up to you:
     <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -952,7 +957,8 @@ true;            // Boolean
 </code></pre></div>
 </td></tr></table></li>
 </ul>
-<h2 id="comments">Comments<a class="headerlink" href="#comments" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="comments"><strong>Comments</strong><a class="headerlink" href="#comments" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Everyone loves to gossip, so comment to your heart's content by adding double slashes, <code>//</code>:
     <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
@@ -963,22 +969,226 @@ true;            // Boolean
 </code></pre></div>
 </td></tr></table></li>
 </ul>
-<h2 id="variable-names">Variable names<a class="headerlink" href="#variable-names" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="variables"><strong>Variables</strong><a class="headerlink" href="#variables" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../variable">Variable</a> <strong>names</strong> can only contain <strong>numbers</strong>, <strong>alphabets</strong>, and the <strong>underscore</strong> <code>_</code>. Also, names <strong>cannot begin</strong> with a number; 
-    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>
+<li>The <a href="../variable#declaration"><code>let</code></a> keyword indicates the declaration of a new variable.</li>
+<li><a href="../variable">Variable</a> <strong>names</strong> can only contain <strong>numbers</strong>, <strong>alphabets</strong>, and the <strong>underscore</strong> <code>_</code>. Also, names <strong>cannot begin</strong> with a number.
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>let a = 1;
+a = 2;
+a = 3 + a; // 5
+<span class="hll">let 3musketeers = 3; // Error because variable name starts with a number
+</span></code></pre></div>
+</td></tr></table></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Reserved keywords</p>
+<ul>
+<li><code>class</code>, <code>super</code>, and <code>this</code> are reserved for a future version of Ari which includes classes, so they are <strong>forbidden</strong>.</li>
+</ul>
+</div>
+<ul>
+<li><a href="../variable#block-scoping-and-shadowing"><strong>Block scoping and shadowing</strong></a> are extremely important concepts that are relevant in other languages.</li>
+</ul>
+<hr />
+<h2 id="displaying-output"><strong>Displaying output</strong><a class="headerlink" href="#displaying-output" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><a href="../builtin_functions#print"><code>print</code></a> displays something in the command line:
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>let a = 10;
+<span class="hll">print &quot;Item no. &quot;;
+</span>print a;
+// Output: Item no. 10
+</code></pre></div>
+</td></tr></table></p>
+</li>
+<li>
+<p><a href="../builtin_functions#println"><code>println</code></a> adds a newline at the end of the output:
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>let a = 10;
+<span class="hll">println &quot;Item no. &quot;;
+</span>println a;
+// Output: Item no.
+//         10
+</code></pre></div>
+</td></tr></table></p>
+</li>
+</ul>
+<hr />
+<h2 id="if-else"><strong>If-Else</strong><a class="headerlink" href="#if-else" title="Permanent link">&para;</a></h2>
+<ul>
+<li>The typical <a href="../control_flow#if"><code>if</code></a> - <a href="../control_flow#else"><code>else</code></a> trope:
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>let a = &quot;apple&quot;;
+if (a == &quot;banana&quot;) {
+    println &quot;banana&quot;;
+}
+else {
+    println a; // This gets printed
+}
 </code></pre></div>
 </td></tr></table></li>
 </ul>
-<h2 id="displaying-output">Displaying output<a class="headerlink" href="#displaying-output" title="Permanent link">&para;</a></h2>
-<h2 id="loops">Loops<a class="headerlink" href="#loops" title="Permanent link">&para;</a></h2>
-<h2 id="exiting-the-program">Exiting the program<a class="headerlink" href="#exiting-the-program" title="Permanent link">&para;</a></h2>
-<h2 id="arrays">Arrays<a class="headerlink" href="#arrays" title="Permanent link">&para;</a></h2>
-<h2 id="generate-random-numbers">Generate random numbers<a class="headerlink" href="#generate-random-numbers" title="Permanent link">&para;</a></h2>
-<h2 id="reading-and-writing-to-files">Reading and writing to files<a class="headerlink" href="#reading-and-writing-to-files" title="Permanent link">&para;</a></h2>
-<p>No delete operations,  because it's experimental, dont want people to lose their files</p>
-<h2 id="serve-static-files-in-a-web-server">Serve static files in a web server<a class="headerlink" href="#serve-static-files-in-a-web-server" title="Permanent link">&para;</a></h2>
-<h2 id="getpost-requests">GET/POST Requests<a class="headerlink" href="#getpost-requests" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="loops"><strong>Loops</strong><a class="headerlink" href="#loops" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><a href="../control_flow#while">While loops</a> repeat as long the condition is <a href="../boolean">true</a>:
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>let a = 3;
+while(a &gt; 0) {
+    println a;
+    a = a - 1;
+}
+// 3
+// 2
+// 1
+</code></pre></div>
+</td></tr></table></p>
+</li>
+<li>
+<p><a href="../control_flow#for">For loops</a> simplify counter-like loops:
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>for(let a = 3; a &gt; 0; a = a- 1) {
+    println a;
+}
+// 3
+// 2
+// 1
+</code></pre></div>
+</td></tr></table></p>
+</li>
+<li>
+<p>There are also <a href="../control_flow#loop-keywords">keywords</a> like <a href="../control_flow#continue"><code>continue</code></a> and <a href="../control_flow#break"><code>break</code></a></p>
+</li>
+</ul>
+<h2 id="exiting-the-program-prematurely"><strong>Exiting the program prematurely</strong><a class="headerlink" href="#exiting-the-program-prematurely" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../builtin_functions#bai"><code>bai</code></a> quits the program and prints a given value:
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>for(let a = 3; a &gt; 0; a = a- 1) {
+    println a;
+    if(a == 2) {
+        bai &quot;i&#39;m sick of loops.&quot;;
+    }
+}
+// 3
+// 2
+// I&#39;m sick of loops
+// Program ends
+</code></pre></div>
+</td></tr></table></li>
+</ul>
+<hr />
+<h2 id="arrays"><strong>Arrays</strong><a class="headerlink" href="#arrays" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../array">Arrays</a> must contain the same type of elements.</li>
+<li>
+<p>Indexes start from 0.
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>let a = [1, 2, 3];  // Array of Numbers
+let b = [&quot;x&quot;, &quot;y&quot;]; // Array of Strings
+a[1] = 5;
+println a; // [1, 5, 3]
+<span class="hll">a[2] = b[1]; // Error because different types
+</span></code></pre></div>
+</td></tr></table></p>
+</li>
+<li>
+<p>Arithmetic for arrays of <a href="../number">Numbers</a> are straightforward:
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>let a = [1, 2, 3];
+let b = [10, 20, 30];
+println a + b; // [11, 22, 33]
+println a * b; // [10, 40, 90]
+</code></pre></div>
+</td></tr></table></p>
+</li>
+<li>
+<p><a href="../array#map">map</a>, <a href="../array#filter">filter</a> and <a href="../array#reduce">reduce</a> are especially useful for quick array transformations.</p>
+</li>
+</ul>
+<hr />
+<h2 id="functions"><strong>Functions</strong><a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><a href="../function">Functions</a> enable code reusability:
+    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>fn is_greater(input) {
+    return input &gt; 5;
+}
+println is_greater(1); // false
+println is_greater(6); // true
+</code></pre></div>
+</td></tr></table></p>
+</li>
+<li>
+<p>Functions are <strong>first class citizens</strong>. <a href="../function#first-class-functions"><strong>What does this mean?</strong></a></p>
+</li>
+<li><a href="../function#closures"><strong>Closure</strong></a> is another important concept to grasp and is relevant to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">other languages</a>.</li>
+</ul>
+<hr />
+<h2 id="built-in-functions"><strong>Built-in Functions</strong><a class="headerlink" href="#built-in-functions" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Built-in functions are useful for executing common operations without reinventing the wheel.</li>
+<li>
+<p>There are built-in functions for <a href="../number#built-in-functions">Number</a>, <a href="../string#built-in-functions">String</a> and <a href="../array#built-in-functions">Array</a>.</p>
+</li>
+<li>
+<p>Other functions include:</p>
+<ul>
+<li><a href="../builtin_functions#random-generation">Generating random numbers</a></li>
+<li><a href="../builtin_functions#file-operations">Reading and writing to files</a></li>
+<li><a href="../builtin_functions#web-stuff">Web stuff</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="more-examples"><strong>More Examples</strong><a class="headerlink" href="#more-examples" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Go <a href="../examples">here</a></li>
+</ul>
+<hr />
                 
               
               
